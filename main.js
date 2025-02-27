@@ -5,7 +5,7 @@ import {
 } from './lib.js';
 
 runTitle();
-warmup2();
+warmup3();
 function warmup1() {
     console.log("Exercise week 1");
 
@@ -49,6 +49,10 @@ function warmup2() {
 
 function warmup3() {
     let student = getStudentJSON();
+
+    document.querySelector("#button-3b").addEventListener("click", () => {
+        document.querySelector("#content-1 p").textContent = "Ik ben er klaar voor!";
+    });
 }
 
 function warmup4() {
