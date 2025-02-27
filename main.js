@@ -49,10 +49,15 @@ function warmup2() {
 
 function warmup3() {
     let student = getStudentJSON();
+    console.log(student);
 
-    document.querySelector("#button-3b").addEventListener("click", () => {
-        document.querySelector("#content-1 p").textContent = "Ik ben er klaar voor!";
-    });
+    const studentObject = JSON.parse(student);
+    console.log(studentObject);
+
+    console.log(studentObject.name)
+
+    document.querySelector('#content-3').innerHTML = '<h2>${studentObject.name} ;
+
 }
 
 function warmup4() {
